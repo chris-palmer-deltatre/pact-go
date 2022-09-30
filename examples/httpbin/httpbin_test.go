@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/dsl"
-	"github.com/pact-foundation/pact-go/types"
-	"github.com/pact-foundation/pact-go/utils"
+	"github.com/chris-palmer-deltatre/pact-go/dsl"
+	"github.com/chris-palmer-deltatre/pact-go/types"
+	"github.com/chris-palmer-deltatre/pact-go/utils"
 )
 
 // An external HTTPS provider

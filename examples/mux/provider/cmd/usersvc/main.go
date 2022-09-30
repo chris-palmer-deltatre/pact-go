@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/pact-foundation/pact-go/examples/mux/provider"
+	"github.com/chris-palmer-deltatre/pact-go/examples/mux/provider"
 )
 
 func main() {

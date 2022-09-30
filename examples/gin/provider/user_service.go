@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/chris-palmer-deltatre/pact-go/examples/types"
 	"github.com/gin-gonic/gin"
-	"github.com/pact-foundation/pact-go/examples/types"
 )
 
 // Login object to be submitted via API POST.

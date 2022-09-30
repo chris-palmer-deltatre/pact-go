@@ -8,14 +8,13 @@ import (
 	"log"
 	"time"
 
-	"github.com/pact-foundation/pact-go/proxy"
+	"github.com/chris-palmer-deltatre/pact-go/proxy"
 )
 
 // Hook functions are used to tap into the lifecycle of a Consumer or Provider test
 type Hook func() error
 
 // VerifyRequest configures the pact verification process.
-//
 type VerifyRequest struct {
 	// URL to hit during provider verification.
 	ProviderBaseURL string

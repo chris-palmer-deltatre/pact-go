@@ -1,3 +1,4 @@
+//go:build provider
 // +build provider
 
 package provider
@@ -8,8 +9,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/dsl"
-	"github.com/pact-foundation/pact-go/examples/messages/types"
+	"github.com/chris-palmer-deltatre/pact-go/dsl"
+	"github.com/chris-palmer-deltatre/pact-go/examples/messages/types"
 )
 
 var user *types.User

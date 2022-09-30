@@ -3,7 +3,7 @@ package dsl
 import (
 	"fmt"
 
-	"github.com/pact-foundation/pact-go/types"
+	"github.com/chris-palmer-deltatre/pact-go/types"
 )
 
 // VerifyMessageRequest contains the verification logic
@@ -60,8 +60,8 @@ type VerifyMessageRequest struct {
 	// Useful for debugging issues with the framework itself
 	PactLogLevel string
 
-	// Tag the provider with the current git branch in the Pact Broker
-	TagWithGitBranch bool
+	// The name of the branch
+	Branch string
 
 	// Arguments to the VerificationProvider
 	// Deprecated: This will be deleted after the native library replaces Ruby deps.
@@ -106,8 +106,8 @@ func (v *VerifyMessageRequest) Validate() error {
 		v.Args = append(v.Args, "--log-level", v.PactLogLevel)
 	}
 
-	if v.TagWithGitBranch {
-		v.Args = append(v.Args, "--tag-with-git-branch", "true")
+	if v.Branch != "" {
+		v.Args = append(v.Args, "--provider-version-branch", v.Branch)
 	}
 
 	return nil

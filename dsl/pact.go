@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/chris-palmer-deltatre/pact-go/install"
+	"github.com/chris-palmer-deltatre/pact-go/proxy"
+	"github.com/chris-palmer-deltatre/pact-go/types"
+	"github.com/chris-palmer-deltatre/pact-go/utils"
 	"github.com/hashicorp/logutils"
-	"github.com/pact-foundation/pact-go/install"
-	"github.com/pact-foundation/pact-go/proxy"
-	"github.com/pact-foundation/pact-go/types"
-	"github.com/pact-foundation/pact-go/utils"
 )
 
 // Pact is the container structure to run the Consumer Pact test cases.
@@ -724,7 +724,6 @@ func (p *Pact) VerifyMessageProviderRaw(request VerifyMessageRequest) ([]types.P
 
 // VerifyMessageConsumerRaw creates a new Pact _message_ interaction to build a testable
 // interaction.
-//
 //
 // A Message Consumer is analogous to a Provider in the HTTP Interaction model.
 // It is the receiver of an interaction, and needs to be able to handle whatever

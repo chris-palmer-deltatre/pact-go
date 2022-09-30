@@ -9,11 +9,11 @@ import (
 	"os"
 	"testing"
 
+	"github.com/chris-palmer-deltatre/pact-go/dsl"
+	examples "github.com/chris-palmer-deltatre/pact-go/examples/types"
+	"github.com/chris-palmer-deltatre/pact-go/types"
+	"github.com/chris-palmer-deltatre/pact-go/utils"
 	"github.com/gin-gonic/gin"
-	"github.com/pact-foundation/pact-go/dsl"
-	examples "github.com/pact-foundation/pact-go/examples/types"
-	"github.com/pact-foundation/pact-go/types"
-	"github.com/pact-foundation/pact-go/utils"
 )
 
 // The actual Provider test itself

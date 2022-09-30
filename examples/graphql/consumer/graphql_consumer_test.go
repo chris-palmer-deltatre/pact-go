@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/chris-palmer-deltatre/pact-go/dsl"
+	g "github.com/chris-palmer-deltatre/pact-go/dsl/graphql"
 	graphqlserver "github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/example/starwars"
 	"github.com/graph-gophers/graphql-go/relay"
 	graphql "github.com/hasura/go-graphql-client"
-	"github.com/pact-foundation/pact-go/dsl"
-	g "github.com/pact-foundation/pact-go/dsl/graphql"
 	"github.com/stretchr/testify/assert"
 )
 

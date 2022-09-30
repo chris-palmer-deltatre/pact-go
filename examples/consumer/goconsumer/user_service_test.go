@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pact-foundation/pact-go/dsl"
-	ex "github.com/pact-foundation/pact-go/examples/types"
+	"github.com/chris-palmer-deltatre/pact-go/dsl"
+	ex "github.com/chris-palmer-deltatre/pact-go/examples/types"
 )
 
 // Common test data
